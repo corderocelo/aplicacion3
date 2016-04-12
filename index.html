@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/jesus.jpg','imagenes/colima.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
+<h1><center>¡VOLCANES!</center></h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:560px;height:260px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Popocatepetl</h2>
+<p>Informacion ¡Qué debes conocer!</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán de Colima</h2>
+<p>Informacion ¡Qué debes conocer!</p>
+</a>
+</li> 
+
+</ul>
+</div>
+<div>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/colima.jpg',1)"><img src="imagenes/puebla.JPG" width="360" height="300" id="Image13"></a></center>
+
+</div>
+
+
+
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Dos | Volcanes</h4>
+  <h4>Jose Angel Cordero Ocelo</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><font color = "red">Volcan Popocatepetl</font></h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h1>Ubicacion.</h1>
+  <p>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’) es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+   <br>
+   <div>
+<img src="imagenes/ubicacion1.jpg" width="50%" height="40%"> </div>
+  <br>
+  <hr>
+  <br>
+  <h1>Dimensiones</h1>
+  <p>Elevación: 5.465 m</p>
+  <br>
+   <div>
+<img src="imagenes/mide1.jpg" width="50%" height="40%"> </div>
+<br>
+<hr>
+<br>
+<h1>Monitoreos</h1>
+<p> Monitoreo Volcanico Popocatepetl: El conjunto de los institutos de Geofisica e Ingeniería  de la UNAM en conjunto con del U.S. Geolical Survey.</p>
+  <br>
+  <div>
+<img src="imagenes/monitoreo1.jpg" width="50%" height="20%"> </div>
+  <br>
+  <hr>
+  <br>
+  <h1>Prevenciones</h1>
+  <p>Consejos de seguridad:
+
+Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetro</p>
+<br>
+   <div>
+<img src="imagenes/prevencion1.jpg" width="50%" height="20%"> </div>
+  <br>
+  <br>
+    <div data-role="collapsible" data-content-theme="false">
+  <h1>Surprise </h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/Gracias1.jpg" width="25%" height="25%"> </div>
+</div>
+  
+  
+  
+  
+  </div>
+  
+ 
+
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres | Volcanes, JACO</h4>
+  </div>
+  </div>
+  </div>
+  
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><font color = "red">Volcan de Colima</font></h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h1>Ubicacion.</h1>
+  <p>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.</p>
+   <br>
+   <div>
+<img src="imagenes/ubicacion2.png" width="50%" height="40%"> </div>
+  <br>
+  <hr>
+  <br>
+  <h1>Dimensiones</h1>
+  <p>Elevación: 3.839 m</p>
+  <br>
+   <div>
+<img src="imagenes/mide2.jpg" width="50%" height="40%"> </div>
+<br>
+<hr>
+<br>
+<h1>Monitoreos</h1>
+<p> Monitoreo Volcanico Popocatepetl: El conjunto de los institutos de Geofisica e Ingeniería  de la UNAM en conjunto con del U.S. Geolical Survey.</p>
+  <br>
+  <div>
+<img src="imagenes/monitoreo1.jpg" width="50%" height="20%"> </div>
+  <br>
+  <hr>
+  <br>
+  <h1>Prevenciones</h1>
+  <p>Consejos de seguridad:
+
+Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetro</p>
+<br>
+   <div>
+<img src="imagenes/prevencion2.jpg" width="50%" height="20%"> </div>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Surprise </h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/Gracias2.jpg" width="25%" height="25%"> </div>
+</div>
+  
+  
+  
+  </div>
+  
+ 
+
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres | Volcanes, JACO</h4>
+  </div>
+  </div>
+  </div>
+ </div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ 
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion dos, JACO</h4>
+ </div>
+ </div>
+ </div>
+
+</body>
+ </html>
