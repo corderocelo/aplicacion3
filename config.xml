@@ -7,10 +7,10 @@ version = "1.0.0">
 
 <!-- VersionCode is optinal and Android only -->
 
-<name>Aplicacion uno DATOSALUMNOS</name>
+<name>Volcanes</name>
 
 <description>
-Aplicacion que muestra los DATOS del alumno
+Volcanes de Puebla y Colima
 </description>
 
 <preference name ="phonegap-version" value="3.1.0" />
